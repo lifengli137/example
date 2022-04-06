@@ -11,7 +11,7 @@ environment:
   - pip install datasets
 
 code:
-  local_dir: $CONFIG_DIR/example
+  local_dir: $CONFIG_DIR/code
 
 
 jobs:
