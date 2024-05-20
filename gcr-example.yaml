@@ -24,7 +24,7 @@ jobs:
   process_count_per_node: 0
   command:
   - python hello.py
-  - python ~/transformers/examples/pytorch/language-modeling/run_clm.py --fp16 --model_name_or_path gpt2 --dataset_name wikitext --dataset_config_name wikitext-2-raw-v1 --do_train --do_eval --output_dir $$AMLT_OUTPUT_DIR --per_device_train_batch_size 4
+  - python ~/transformers/examples/pytorch/language-modeling/run_clm.py --fp16 --model_name_or_path gpt2 --dataset_name wikitext --dataset_config_name wikitext-2-raw-v1 --do_train --do_eval --output_dir $$AMLT_OUTPUT_DIR --per_device_train_batch_size 4 --overwrite_output_dir
   sla_tier: Premium
   execution_mode: basic
   priority: medium
